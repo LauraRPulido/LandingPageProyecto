@@ -1,0 +1,66 @@
+@import url(reset.css);
+@import url(variables.css);
+@import url(tipo.css);
+
+body{
+    text-align: center;
+    /* RESPONSIVE PARA PANTALLA PC */
+                            /* Aqui iria la variable del movil pero el navegador no las lee no se porque */
+    @media screen and (width > 960px) {
+        text-align: left;
+    }
+}
+
+header#header{
+    min-height: 100vh;
+    background: #3DBFFF url("../images/desktop/image-header.jpg") no-repeat center bottom;
+    background-size: auto 70%;
+    position: fixed;
+
+/* CAJA ARRIBA */
+    div.top{
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 20px;
+
+        .menuMovil{
+            button{
+                background-color: transparent;
+                border: none;
+            }
+            @media screen and (width > 960px) {
+                display: none;
+            }
+        }
+        .menuEscritorio{
+            display: none;
+            /* responsive PC */
+            @media screen and (width > 960px) {
+                display: block;
+            }
+        }
+    }
+
+/* CAJA ABAJO */
+    div.bottom {
+/* GUAPISIMO USAR CALC() */
+        /* background-color: red; */
+        min-height: 70vh;
+        height: calc(100vh - 100px);
+        align-content: center;
+
+        h1{
+            font-size: 15vw;
+            text-transform: uppercase;
+            color: var(--blanco);
+        }
+
+        button{
+            background-color: transparent;
+            border: none;
+            margin-top: 50px;
+        }
+    }
+}
+
+/* position: static, no se mueve. position: relative, se mueve en base a su punto de referencia, se pueden superponer elementos. position: absolute, se pasa a una capa nueva y los elementos de la caja se ven afectados y pasan a ocupar su posición si este estaba por encima suya. La posicion tiene a su padre como punto de referencia. */

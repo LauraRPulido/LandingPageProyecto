@@ -1,0 +1,27 @@
+:root{
+
+    --blanco: white;
+    --negro: black;
+    --salmon:hsl(7, 99%, 70%);
+    --amarillo: hsl(51, 100%, 49%);
+    --cyanOscuro: hsl(167, 40%, 24%);
+    --azulOscuso: hsl(198, 62%, 26%);
+    --cyanOscuroModerado: hsl(168, 34%, 41%);
+    --gris: hsl(210, 4%, 67%);
+
+    --movil:960px;
+    /* --escritorio:961px; */
+
+/* Colores Primarios */
+/* salmon hsl(7, 99%, 70%)
+Amarillo: hsl(51, 100%, 49%)
+cyanOscuro desaturado (texto de diseño gráfico): hsl(167, 40%, 24%)
+Azul oscuro (texto de fotografía): hsl(198, 62%, 26%)
+Cian oscuro moderado (pie de página): hsl(168, 34%, 41%)
+Neutros
+Azul desaturado muy oscuro: hsl(212, 27%, 19%)
+Azul grisáceo muy oscuro: hsl(213, 9%, 39%)
+Azul grisáceo oscuro: hsl(232, 10%, 55%)
+Azul grisáceo: hsl(210, 4%, 67%)
+Blanco: hsl(0, 0%, 100%) */
+}

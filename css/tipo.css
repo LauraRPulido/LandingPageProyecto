@@ -1,0 +1,14 @@
+/* Tipografía
+Cuerpo de texto
+Tamaño de fuente: 18px */
+p{
+    /* Fuentes
+    Familia: Barlow  / Peso: 600  */
+    font-family: "Barlow", serif;
+    font-weight: 600;
+}
+h1,h2,h3,h4,h5,h6{
+    /*Familia: Fraunces  / Pesos: 700, 900 */
+      font-family: "Fraunces", serif;
+      font-weight: 700;
+}
