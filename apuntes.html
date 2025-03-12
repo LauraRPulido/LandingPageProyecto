@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes</title>
+    <style>
+        .arriba{
+            
+            background-color: pink;
+        }
+        .abajo{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="caja">
+
+        <div class="arriba"></div>
+        <div class="abajo"></div>
+
+    </div>
+<script>
+    const abajo = document.querySelector(".abajo");
+    const distancia = abajo.offsetTop;
+    abajo.style.position="fixed";
+    abajo.style.top = "0";
+    abajo.style.width = "100%";
+  
+    window.addEventListener("scroll", ()=>{
+        console.log(window.scrollY);
+    })
+</script>
+</body>
+</html>
